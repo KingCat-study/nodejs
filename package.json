@@ -1,0 +1,22 @@
+{
+  "name": "kingcat_nodejs_study",
+  "version": "1.0.0",
+  "description": "node js server side study",
+  "main": "osPlatformModule.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingCat-study/nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KingCat-study/nodejs/issues"
+  },
+  "homepage": "https://github.com/KingCat-study/nodejs#readme",
+  "dependencies": {
+    "underscore": "^1.10.2"
+  }
+}
