@@ -18,6 +18,7 @@
   "homepage": "https://github.com/KingCat-study/nodejs#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "pug": "^3.0.0",
     "underscore": "^1.10.2"
   }
 }
