@@ -19,12 +19,23 @@ app.get('/', function(req, res) {
   res.send("Welcome To Home  어서오세요. 아픈 강소연");
 });
 
+app.get('/topic' , (req, res) => {
+  var id = req.query.id;
+  var name = req.query.name;
+  if(name == undefined)
+  {
+      name = '익명';
+  }
+  var returnString = "id 는 " + id + " 이름은 " + name;
+  res.send(returnString);
+});
+
 app.get('/dynamic' , (req, res) =>{
   var li_tags = '';
   for (var i = 0; i < 5; i++) {
     li_tags = li_tags + '<li>코딩 삽입 ' + i + '</li>';
   }
-  var time = Date();
+  var time = Date(); 
 
   var output = `<!DOCTYPE html>
   <html" dir="ltr">
