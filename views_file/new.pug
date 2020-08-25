@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+  body
+    h1
+      a(href='/topic/view') Server Side JavaScript
+    ul
+    each title in topics
+      li
+        a(href='/topic/'+title)= title
+    artcle
+      form(action='/topic/save', method='post')
+        p
+          input(type='text' name='title' placeholder='제목')
+        p
+          textarea(name='desc' placeholder='내용')
+        p
+          input(type='submit')
